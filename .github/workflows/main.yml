@@ -26,6 +26,7 @@ jobs:
         pip install build
 
  #Instala o Flake8 (ferramenta de linting para código Python) e o Pytest (framework de teste para Python)
+ #flake8 é uma framework que checa o estilo e qualidade de código em Python
     - name: Pytest
       run: pip install flake8 pytest
  #Executa os testes usando o Pytest
