@@ -17,3 +17,6 @@ class TesteSoma():
 
     def test_soma_mistos(self):
         assert calc.Calculadora.soma(1, -2) == -1
+
+    def test_soma_mistos(self):
+        assert calc.Calculadora.soma(5, 5) == 10
