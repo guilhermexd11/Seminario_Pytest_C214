@@ -15,7 +15,7 @@ A atividade consiste em apresentar alguns testes de unidade feitos com uma ferra
 
 ### Windows
 
-#### 1. Download:
+#### Download:
 
 Baixe o instalador MSI do <a href="https://www.python.org/downloads/" >site oficial do Python</a> e execute o instalador.
 
