@@ -3,27 +3,31 @@ name: CI Python
 on: 
   push:
     branches: [ main ]
-
+#Define o diretório de trabalho
 defaults:
   run:
     working-directory: ./Calculadora/
 
 jobs:
   build:
-
+# Será executado em uma máquina virtual
     runs-on: ubuntu-latest
-
+  #Configura o ambiente Python 
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python
       uses: actions/setup-python@v3
       with:
         python-version: '3.10'
+  #Atualiza o pip (gerenciador de pacotes do Python) e instala o pacote build
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install build
+
+ #Instala o Flake8 (ferramenta de linting para código Python) e o Pytest (framework de teste para Python)
     - name: Pytest
       run: pip install flake8 pytest
+ #Executa os testes usando o Pytest
     - name: Testes
       run: pytest
