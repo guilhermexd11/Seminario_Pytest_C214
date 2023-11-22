@@ -77,7 +77,7 @@ git clone https://github.com/guilhermexd11/Seminario_Pytest_C214.git
 
 ### Comandos de teste
 
-Para realização dos testes, 3 comandos podem ser feitos:
+Para realização dos testes os comandos podem ser feitos:
 Rodar todos os arquivos de teste
 ```bash
 pytest
